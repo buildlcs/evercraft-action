@@ -17,7 +17,7 @@ jobs:
           distribution: temurin
           java-version: '25'
       - name: Extract source files
-        run: unzip -q evercraft-action-source.zip -d .
+        run: unzip -oq evercraft-action-source.zip -d .
       - name: Build mod
         working-directory: fabric/26.3
         run: bash ./gradlew --no-daemon --console=plain build
